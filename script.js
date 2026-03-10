@@ -43,6 +43,7 @@ torus.rotation.y += 0.01
 renderer.render(scene,camera)
 
 }
+console.log("Animation script loaded");
 
 animate()
 
@@ -50,4 +51,5 @@ function scrollToProjects(){
 document.getElementById("projects").scrollIntoView({
 behavior:"smooth"
 })
+
 }
