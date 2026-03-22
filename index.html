@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Saurav Thakuria | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header>
+    <h1 class="logo">
+  <img src="logo.png" alt="Saurav Logo">
+</h1>
+    <nav>
+        <button onclick="scrollToSection('home')">Home</button>
+        <button onclick="scrollToSection('about')">About</button>
+        <button onclick="scrollToSection('skills')">Skills</button>
+        <button onclick="scrollToSection('projects')">Project</button>
+        <button onclick="scrollToSection('contact')">Contact</button>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section id="home" class="hero">
+    <div class="overlay">
+        <h2>Hi, I'm <span style="color:#38bdf8;">Saurav Thakuria</span></h2>
+        <p>Web Developer | Java Learner | Tech Enthusiast | Project Coordinator </p>
+        <button onclick="scrollToSection('projects')">View Work</button> 
+        <br><br>
+        <a href="Resume.pdf" download class="nav-btn">Resume</a>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        I am a passionate developer focused on creating modern,
+        responsive and user-friendly websites.
+
+        I am Currently working in Yuvaan Educative LLP as a Project Coordinator.
+    </p>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <h2>Featured Projects</h2>
+
+  <div class="project-grid">
+
+    <div class="project-card">
+      <div class="project-content">
+        <h3>Gym Management System</h3>
+        <p>Java-based system with login, payments, and admin dashboard.</p>
+        <a href="https://github.com/s-aur-av/Gym-Management-System" target="_blank">View Project →</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-content">
+        <h3>Portfolio Website</h3>
+        <p>Modern responsive portfolio with animations.</p>
+        <a href="https://github.com/s-aur-av/Portfolio" target="_blank">View Project →</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-content">
+        <h3>Mini Calculator</h3>
+        <p>Java-based calculator with advanced logic.</p>
+        <a href="https://github.com/s-aur-av/Simple-Calculator" target="_blank">View Project →</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <h2>My Expertise</h2>
+
+  <div class="skills-grid">
+
+    <div class="skill-card">
+      <h3>Frontend</h3>
+      <div class="tags">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>React</span>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <h3>Backend</h3>
+      <div class="tags">
+        <span>Java</span>
+        <span>OOP</span>
+        <span>DSA</span>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <h3>Tools</h3>
+      <div class="tags">
+        <span>Git</span>
+        <span>GitHub</span>
+        <span>VS Code</span>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <h3>Currently Learning</h3>
+      <div class="tags">
+        <span>React</span>
+        <span>UI/UX</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Let's Connect</h2>
+
+  <div class="contact-wrapper">
+
+    <!-- LEFT INFO -->
+    <div class="contact-info">
+      <h3>Get in touch</h3>
+      <p>Have a project idea or just want to say hi? 👋</p>
+
+      <div class="info-box">
+        <span>📧</span>
+        <p>sauravthakuria2003@gmail.com</p>
+      </div>
+
+      <div class="info-box">
+        <span>📞</span>
+        <p>+91 8638082938</p>
+      </div>
+
+      <div class="socials">
+        <a href="https://github.com/s-aur-av" target="_blank">
+  <i class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com/in/YOUR_USERNAME" target="_blank">
+  <i class="fa-brands fa-linkedin"></i></a>
+
+      </div>
+    </div>
+
+    <!-- RIGHT FORM -->
+    <div class="contact-form-box">
+
+      <form 
+        action="https://docs.google.com/forms/d/e/1FAIpQLSd_JuJNEnAfX74g0qsbkmv-qudttuiQTP0_IwEKhWfiXL3vIQ/formResponse"
+        method="POST"
+        target="hidden_iframe"
+        onsubmit="return handleSubmit()"
+      >
+
+        <input type="text" name="entry.2116424970" placeholder="Your Name" required>
+
+        <input type="email" name="entry.1252102187" placeholder="Your Email" required>
+
+        <textarea name="entry.1014805672" rows="5" placeholder="Your Message" required></textarea>
+
+        <button type="submit">Send Message 🚀</button>
+
+      </form>
+
+      <iframe name="hidden_iframe" style="display:none;"></iframe>
+
+      <p id="success-msg"></p>
+
+    </div>
+
+  </div>
+</section>
+<footer>
+    <p>© 2026 Saurav Thakuria</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
