@@ -966,3 +966,69 @@ footer {
     padding: 20px;
     background: #020617;
 }
+
+@media (max-width: 768px) {
+
+    /* HERO LAYOUT */
+    .hero {
+        height: auto;
+        padding: 120px 20px 60px;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    /* TEXT */
+    .hero-left h1 {
+        font-size: 2.2rem;
+        line-height: 1.2;
+    }
+
+    .hero-left p {
+        font-size: 14px;
+    }
+
+    /* BUTTONS */
+    .hero-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    /* IMAGE SECTION */
+    .hero-right {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* MAIN IMAGE */
+    .main-screen img {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    /* MOBILE IMAGE FIX */
+    .mobile-screen {
+        position: absolute;
+        right: 10px;
+        bottom: -10px;
+    }
+
+    .mobile-screen img {
+        width: 100px;
+    }
+
+    /* REMOVE EXTRA SPACE */
+    body {
+        overflow-x: hidden;
+    }
+}
+.hero-container {
+    flex-wrap: wrap;
+}
