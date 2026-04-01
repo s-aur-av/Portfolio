@@ -12,6 +12,12 @@ body {
     scroll-behavior: smooth;
 }
 
+@media (max-width: 768px) {
+    body {
+        padding-top: 80px; /* adjust based on navbar height */
+    }
+}
+
 /* NAVBAR */
 header {
     position: fixed;
@@ -160,7 +166,7 @@ nav button:hover {
 
 
 .hero {
-    height: 100vh;
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -967,49 +973,26 @@ footer {
     background: #020617;
 }
 
-.hero-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 40px;
-
-    flex-wrap: wrap; /* VERY IMPORTANT */
-}
-
-.main-screen img {
-    width: 100%;
-    max-width: 550px;
-}
-
-.hero-left h1 {
-    font-size: clamp(2rem, 5vw, 4rem);
-}
-
 @media (max-width: 768px) {
+
+    .hero {
+        height: auto;              /* REMOVE full height */
+        min-height: unset;
+        padding: 100px 20px 40px;  /* top spacing for navbar */
+        display: flex;
+        align-items: flex-start;   /* START from top */
+        justify-content: center;
+    }
 
     .hero-content {
         flex-direction: column;
         text-align: center;
+        gap: 25px;
     }
 
-    .hero-right {
-        margin-top: 20px;
-    }
-
-    .mobile-screen {
-        display: none; /* cleaner mobile */
+    .hero-left {
+        margin-top: 0;
     }
 
 }
-
-body {
-    overflow-x: hidden;
-}
-
-@media (max-width: 1024px) {
-    .hero-left h1 {
-        font-size: 3rem;
-    }
-}
-
 
