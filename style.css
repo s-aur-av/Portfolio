@@ -166,11 +166,11 @@ nav button:hover {
 
 
 .hero {
-    min-height: 100svh;
-    padding: 80px 20px;
+    min-height: auto;              /* remove 100vh problem */
+    padding: 120px 20px 60px;     /* top = navbar space */
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    
     align-items: center;
     text-align: center;
     background:
@@ -204,7 +204,7 @@ nav button:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 40px;
+    gap: 30px;
 }
 
 /* LEFT SIDE */
@@ -220,6 +220,16 @@ nav button:hover {
 }
 
 @media (max-width: 768px) {
+
+  .hero {
+    padding: 100px 15px 40px; /* reduce bottom space */
+  }
+
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
 
   .hero-left h1 {
     font-size: 26px;
@@ -269,7 +279,7 @@ nav button:hover {
 .hero-right {
     position: relative;
     display: flex;
-    justify-content: center;
+  
     align-items: center;
 }
 
@@ -659,10 +669,32 @@ MAKE IMAGE CLICKABLE
 /* DASHBOARD */
 @media (max-width: 768px) {
 
+  /* Stack layout */
   .hero-container {
-    flex-direction: column; /* stack */
+    flex-direction: column;
+    align-items: center;
     text-align: center;
   }
+
+  /* MAIN SCREEN */
+  .main-screen img {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  /* MOBILE SCREEN BELOW MAIN IMAGE */
+  .mobile-screen {
+    position: relative;   /* remove absolute */
+    right: 0;
+    bottom: 0;
+    margin-top: 15px;
+  }
+
+  .mobile-screen img {
+    width: 110px;
+  }
+
+}
 
   .hero-left {
     order: 1;
@@ -673,7 +705,7 @@ MAKE IMAGE CLICKABLE
     margin-top: 30px;
   }
 
-}
+
 
 
 #dashboard {
