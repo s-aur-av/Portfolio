@@ -21,6 +21,8 @@ body {
     background: #020617;
     color: #fff;
     scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
 }
 
 /* NAVBAR */
@@ -393,6 +395,12 @@ MAKE IMAGE CLICKABLE
   padding: 60px 20px;
 }
 
+@media (max-width: 768px) {
+  section {
+    padding: 40px 15px;
+  }
+}
+
 .container {
   width: 100%;
   max-width: 1200px;
@@ -582,6 +590,7 @@ MAKE IMAGE CLICKABLE
 /* PROJECT PREMIUM */
 /* GRID */
 #projects {
+    text-align: center
     background:
         linear-gradient(180deg, rgba(56,189,248,0.05), #020617 70%),
         radial-gradient(circle at 80% 30%, rgba(99,102,241,0.18), transparent);
@@ -933,6 +942,7 @@ MAKE IMAGE CLICKABLE
 
 /* CONTACT PREMIUM */
 #contact {
+    margin-top: 60px;
     text-align: center;
     background:
         linear-gradient(180deg, rgba(56,189,248,0.08), #020617),
