@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR Generator Pro</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="../favicon/qr.png">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+
+<main class="app-shell">
+  <section class="tool-card" aria-labelledby="page-title">
+    <div class="content-panel">
+      <p class="eyebrow">Instant QR Studio</p>
+      <h1 id="page-title">QR Generator Pro</h1>
+      <p class="lead">Create a clean, high-quality QR code for any link, text, email, or contact note.</p>
+
+      <label for="text">Text or URL</label>
+      <div class="input-wrap">
+        <input type="text" id="text" placeholder="https://your-link.com" autocomplete="off">
+      </div>
+
+      <div class="actions">
+        <button class="primary-btn" type="button" onclick="generateQR()">Generate QR</button>
+        <button class="secondary-btn" id="downloadBtn" type="button" onclick="downloadQR()" disabled>Download PNG</button>
+      </div>
+
+      <p id="status" class="status" aria-live="polite"></p>
+    </div>
+
+    <aside class="preview-panel" aria-label="QR preview">
+      <div class="qr-frame">
+        <div id="qrcode" class="qr-placeholder">
+          <span>QR preview</span>
+        </div>
+      </div>
+      <div class="preview-footer">
+        <span>PNG</span>
+        <span>200 x 200</span>
+      </div>
+    </aside>
+  </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
